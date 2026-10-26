@@ -1,0 +1,240 @@
+<!DOCTYPE html> 
+<html lang=”en”> 
+<head> 
+<meta charset=”UTF-8”> 
+<meta name=”viewport” content=”width=device-width, initial-scale=1.0”> 
+<meta name=”theme-color” content=”#08090c”> 
+<meta name=”description” content=”Zorix builds algorithmic trading tools for Forex 
+and Gold traders.”> 
+<title>ZORIX | Algorithmic Trading Tools</title> 
+<style> 
+:root { --bg: #08090c; 
+--panel: #111318; --gold: #e9bd62; --text: #f5f3ed; --muted: #a5a6ad; --line: #282a30; 
+} 
+• { box-sizing: border-box; } 
+Html { scroll-behavior: smooth; } 
+Body { 
+Margin: 0; 
+Background: var(--bg); 
+Color: var(--text); 
+Font-family: Inter, Arial, sans-serif; 
+Line-height: 1.6; 
+} 
+A { color: inherit; text-decoration: none; } 
+.wrap { width: min(1120px, 90%); margin: auto; } 
+Header { 
+Border-bottom: 1px solid var(--line); 
+Position: sticky; top: 0; 
+Background: rgba(8,9,12,.94); 
+Backdrop-filter: blur(12px); 
+z-index: 10; 
+} 
+Nav { 
+Min-height: 76px; display: flex; align-items: center; 
+Justify-content: space-between; gap: 20px; 
+} 
+.logo { font-size: 25px; font-weight: 900; letter-spacing: 4px; } 
+.logo span { color: var(--gold); } 
+.links { display: flex; align-items: center; gap: 24px; font-size: 14px; } 
+.links a:hover { color: var(--gold); } 
+.btn { 
+Display: inline-block; padding: 12px 19px; border-radius: 7px; 
+Background: var(--gold); color: #17130a; font-weight: 800; 
+Border: 1px solid var(--gold); 
+} 
+.btn.outline { background: transparent; color: var(--text); border-color: #55565b; } 
+.hero { padding: 100px 0 78px; } 
+.tag { 
+Display: inline-block; color: var(--gold); border: 1px solid #51432a; 
+Background: #18150f; padding: 6px 12px; border-radius: 30px; 
+Font-size: 12px; letter-spacing: 1px; text-transform: uppercase; 
+} 
+H1 { font-size: clamp(42px, 7vw, 76px); line-height: 1.08; letter-spacing: -2px; margin: 
+22px 0; } 
+H1 span, .gold { color: var(--gold); } 
+.lead { color: var(--muted); max-width: 650px; font-size: 18px; } 
+.actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; } 
+.note { color: var(--muted); font-size: 12px; margin-top: 20px; } 
+.stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; margin-top: 
+48px; } 
+.stat, .card { 
+Border: 1px solid var(--line); border-radius: 12px; 
+Background: linear-gradient(145deg, #14161c, #0d0e12); 
+Padding: 22px; 
+} 
+.stat strong { display: block; font-size: 19px; color: var(--gold); } 
+.stat span { color: var(--muted); font-size: 13px; } 
+Section { padding: 76px 0; border-top: 1px solid var(--line); } 
+.eyebrow { color: var(--gold); text-transform: uppercase; letter-spacing: 2px; font-size: 
+12px; } 
+H2 { font-size: clamp(30px, 4vw, 43px); line-height: 1.2; margin: 10px 0 15px; } 
+.sub { color: var(--muted); max-width: 680px; } 
+.grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; margin-top: 
+30px; } 
+.card h3 { margin-top: 5px; } 
+.icon { font-size: 28px; color: var(--gold); } 
+.card p, li { color: var(--muted); font-size: 14px; } 
+.status { color: var(--gold); font-size: 11px; letter-spacing: 1px; text-transform: 
+uppercase; } 
+Ul { padding-left: 19px; } 
+.callout { border: 1px solid #4b3d26; background: #15120d; padding: 28px; border
+radius: 12px; margin-top: 25px; } 
+.faq { border-bottom: 1px solid var(--line); padding: 18px 0; } 
+.faq strong { display: block; } 
+Footer { padding: 30px 0; color: var(--muted); font-size: 12px; } 
+@media(max-width:760px) { 
+.links { gap: 12px; font-size: 12px; } 
+.links .hide { display: none; } 
+.hero { padding-top: 65px; } 
+.grid { grid-template-columns: 1fr; } 
+.stats { grid-template-columns: 1fr; } 
+Nav { min-height: 66px; } 
+} 
+</style> 
+</head> 
+<body> 
+<header> 
+  <div class=”wrap”> 
+    <nav> 
+      <a class=”logo” href=”#”>ZORIX<span>.</span></a> 
+      <div class=”links”> 
+        <a href=”#products”>Products</a> 
+        <a class=”hide” href=”#technology”>Technology</a> 
+        <a class=”hide” href=”#risk”>Risk</a> 
+        <a class=”btn” href=”#products”>Explore EAs</a> 
+      </div> 
+    </nav> 
+  </div> 
+</header> 
+ 
+<main> 
+  <div class=”wrap hero”> 
+    <span class=”tag”>Algorithmic trading tools</span> 
+    <h1>Trade with a plan.<br><span>Build with precision.</span></h1> 
+    <p class=”lead”>Explore systematic trading tools designed for MetaTrader 5, with a 
+focus on Forex and Gold. Clear rules, transparent testing and risk-aware 
+development.</p> 
+    <div class=”actions”> 
+      <a class=”btn” href=”#products”>Explore Products ↗</a> 
+      <a class=”btn outline” href=”#technology”>Our Approach</a> 
+    </div> 
+    <p class=”note”>Independent trading software. No guaranteed returns. Trading 
+involves substantial risk.</p> 
+    <div class=”stats”> 
+      <div class=”stat”><strong>Forex + Gold</strong><span>Markets we aim to 
+support</span></div> 
+      <div class=”stat”><strong>MetaTrader 5</strong><span>Designed for MT5 
+workflows</span></div> 
+      <div class=”stat”><strong>Risk first</strong><span>Testing before performance 
+claims</span></div> 
+    </div> 
+  </div> 
+ 
+  <section id=”products”> 
+    <div class=”wrap”> 
+      <div class=”eyebrow”>The product desk</div> 
+      <h2>Tools for systematic traders.</h2> 
+      <p class=”sub”>Our product catalogue is being developed. Product availability and 
+verified test reports will be published when ready.</p> 
+      <div class=”grid”> 
+        <article class=”card”> 
+          <div class=”icon”>◈</div> 
+          <span class=”status”>In development</span> 
+          <h3>Zorix Gold</h3> 
+          <p>An automated strategy prototype for Gold and selected Forex instruments, built 
+for MT5 testing.</p> 
+          <p><strong>Platform:</strong> MetaTrader 5</p> 
+          <a class=”gold” href=”#contact”>Product information →</a> 
+        </article> 
+        <article class=”card”> 
+          <div class=”icon”>⌁</div> 
+          <span class=”status”>Planned</span> 
+          <h3>Zorix FX</h3> 
+          <p>A future collection of tools for selected major currency pairs, subject to testing 
+and validation.</p> 
+          <p><strong>Platform:</strong> MetaTrader 5</p> 
+          <span class=”gold”>Coming later</span> 
+        </article> 
+        <article class=”card”> 
+          <div class=”icon”>▦</div> 
+          <span class=”status”>Planned</span> 
+          <h3>Zorix Dashboard</h3> 
+          <p>A future customer area for account access, licensed downloads, updates and 
+support.</p> 
+          <p><strong>Access:</strong> Not available yet</p> 
+          <span class=”gold”>Coming later</span> 
+        </article> 
+      </div> 
+    </div> 
+  </section> 
+ 
+  <section id=”technology”> 
+    <div class=”wrap”> 
+      <div class=”eyebrow”>How we build</div> 
+      <h2>Evidence over hype.</h2> 
+      <p class=”sub”>Trading software should be evaluated on its rules, risks and 
+observed behaviour—not just attractive marketing.</p> 
+      <div class=”grid”> 
+        <article class=”card”><div class=”icon”>01</div><h3>Define the 
+rules</h3><p>Document entries, exits, position sizing and the conditions that prevent a 
+trade.</p></article> 
+        <article class=”card”><div class=”icon”>02</div><h3>Test 
+systematically</h3><p>Use historical testing and demo forward testing while 
+accounting for spread, slippage and execution limits.</p></article> 
+        <article class=”card”><div class=”icon”>03</div><h3>Report 
+honestly</h3><p>Publish test dates, settings, drawdown and limitations when reliable 
+reports are available.</p></article> 
+      </div> 
+    </div> 
+  </section> 
+ 
+  <section id=”risk”> 
+    <div class=”wrap”> 
+      <div class=”eyebrow”>Risk disclosure</div> 
+      <h2>Know the risks before trading.</h2> 
+      <div class=”callout”> 
+        <p>Forex and Gold trading can result in rapid and substantial losses. Automated 
+strategies may behave differently across brokers, spreads, execution conditions and 
+market regimes. Backtests do not guarantee future performance.</p> 
+        <p>Zorix does not promise profits or risk-free trading. Test software on a demo 
+account and understand its settings before considering live use.</p> 
+      </div> 
+    </div> 
+  </section> 
+ 
+  <section id=”faq”> 
+    <div class=”wrap”> 
+      <div class=”eyebrow”>Common questions</div> 
+      <h2>Before you get started.</h2> 
+      <div class=”faq”><strong>Are products available to buy now?</strong><span 
+class=”sub”>The catalogue is under development. Availability will be announced after 
+testing.</span></div> 
+<div class=”faq”><strong>Does Zorix guarantee profits?</strong><span 
+class=”sub”>No. No trading EA can guarantee profits or eliminate risk.</span></div> 
+<div class=”faq”><strong>Will there be a customer dashboard?</strong><span 
+class=”sub”>A dashboard for account access, downloads and updates is planned for a 
+later phase.</span></div> 
+</div> 
+</section> 
+<section id=”contact”> 
+<div class=”wrap”> 
+<div class=”eyebrow”>Get in touch</div> 
+<h2>Follow the Zorix journey.</h2> 
+<p class=”sub”>Product enquiries and support contact details will be added here 
+before public launch.</p> 
+<a class=”btn” href=mailto:hello@zorix.example>Contact placeholder</a> 
+<p class=”note”>Replace the placeholder email with a real business email before 
+launch.</p> 
+</div> 
+</section> 
+</main> 
+<footer> 
+<div class=”wrap”> 
+<div class=”logo”>ZORIX<span>.</span></div> 
+<p>Algorithmic trading tools for Forex and Gold.</p> 
+<p>© 2026 Zorix. All rights reserved.</p> 
+<p>Trading involves risk. Past performance does not guarantee future results.</p> 
+</div> 
+</footer> 
+</body> 
+</html> 
